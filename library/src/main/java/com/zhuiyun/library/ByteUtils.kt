@@ -81,4 +81,49 @@ object ByteUtils {
         }
         return sb.toString()
     }
+
+
+    /**
+     * Hex转byte[]，两种情况，Hex长度为奇数最后一个字符会被舍去
+     */
+    fun hexTobytes(hex: String): ByteArray? {
+        return if (hex.isEmpty()) {
+            null
+        } else {
+            val result = ByteArray(hex.length / 2)
+            var j = 0
+            var i = 0
+            while (i < hex.length) {
+                result[j++] = hex.substring(i, i + 2).toInt(16).toByte()
+                i += 2
+            }
+            result
+        }
+    }
+
+    fun intToHexString(hex: Int): String? {
+        return Integer.toHexString(hex)
+    }
+
+    /**
+     * 有符号的hex转int
+     * @param byte1
+     * @param byte2
+     * @return
+     */
+    fun signedHextoInt(byte1: Byte, byte2: Byte): Int {
+        return Math.abs(
+            if (bytesToHex(byte1, byte2)!!.toInt(16) >= 32768) bytesToHex(byte1, byte2)!!
+                .toInt(16) - 65536 else bytesToHex(byte1, byte2)!!.toInt(16)
+        )
+    }
+
+    fun signedIntToHex(data: Int): String? {
+        return if (data > 0) {
+            Integer.toHexString(data)
+        } else {
+            Integer.toHexString(65536 - data)
+        }
+    }
+
 }

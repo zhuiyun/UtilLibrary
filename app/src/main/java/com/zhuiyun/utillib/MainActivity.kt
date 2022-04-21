@@ -1,19 +1,19 @@
 package com.zhuiyun.utillib
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.MutableLiveData
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
-import com.zhuiyun.library.ByteUtils
+import com.google.android.material.snackbar.Snackbar
 import com.zhuiyun.utillib.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+    var reset = MutableLiveData<Boolean>()
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
