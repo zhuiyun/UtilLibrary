@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_bmsinfo_bg"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:textSize="17sp"
+        android:lines="2"
+        android:textColor="@color/gray"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_height="wrap_content"/>
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <Button
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <Button
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+
+        android:layout_height="60dp"/>
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <Button
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:id="@+id/btnCancel"
+        android:text="@string/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

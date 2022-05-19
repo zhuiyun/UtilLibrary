@@ -1,4 +1,4 @@
-package com.zhuiyun.library
+package com.zhuiyun.library.utils
 
 /**
 
@@ -56,7 +56,7 @@ object ByteUtils {
      * ascii码的byte转int
      */
     fun hextoInt(byte1: Byte, byte2: Byte): Int? {
-        return ByteUtils.bytesToHex(byte1, byte2)?.toInt(16)
+        return bytesToHex(byte1, byte2)?.toInt(16)
     }
 
 
