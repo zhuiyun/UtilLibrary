@@ -10,6 +10,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
+import com.zhuiyun.library.utils.KeyboardUtils
 import com.zhuiyun.utillib.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -33,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
