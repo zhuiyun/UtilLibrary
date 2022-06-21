@@ -2,13 +2,11 @@ package com.zhuiyun.library.view
 
 import android.app.Dialog
 import android.content.Context
-import android.widget.TextView
-import com.zhuiyun.library.view.SelectDialog.SelectListener
-import android.view.WindowManager
-import android.view.ViewGroup
 import android.view.Gravity
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import com.zhuiyun.library.R
 
 class SelectDialog(context: Context, titleText: String?, btn1Text: String?, btn2Text: String?) :
@@ -17,7 +15,7 @@ class SelectDialog(context: Context, titleText: String?, btn1Text: String?, btn2
     var btn2: Button
     var cancel: Button
     var title: TextView
-    lateinit var selectListener:SelectListener
+    lateinit var selectListener: SelectListener
 
 
     private fun initClick() {
