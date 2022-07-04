@@ -205,9 +205,6 @@ public class BigdecimalUtil {
 
     /**
      * 取余数  BigDecimal
-     *
-     * @param v1    被除数
-     * @param v2    除数
      * @param scale 小数点后保留几位
      * @return 余数
      */
