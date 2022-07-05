@@ -18,9 +18,5 @@ Android Util Library
 
 
 
-git
-
-![](https://github.com/zhuiyun/UtilLibrary/blob/master/011500266295799.jpg)
-
 
 
