@@ -16,7 +16,7 @@ Android Util Library
 9. Android选择弹窗
 10. Android确认提示弹窗
 11. 协程编写的蓝牙框架,耦合度较高,需自行定制
-
+12. 增加registerForActivityResult封装的请求权限,拍照,读取相册,裁剪等回调
 
 
 

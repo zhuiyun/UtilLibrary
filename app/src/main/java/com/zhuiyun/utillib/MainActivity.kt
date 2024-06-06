@@ -31,7 +31,35 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
-        
+
+        //权限回调
+        private var permissionLauncher: ActivityResultLauncher<Array<String>> =
+            registerForActivityResult(
+                ActivityResultContracts.RequestMultiplePermissions()
+            ) {
+
+
+            }
+
+
+        //拍照回调
+        private val mLauncherCameraUri: ActivityResultLauncher<Any?> = registerForActivityResult(
+            CameraResultContacts()
+        ) {
+
+        }
+
+        //选取图片
+        private val mLauncherAlbum =
+            registerForActivityResult(ActivityResultContracts.GetContent()) { uri ->
+
+            }
+
+        //裁剪
+        private val mLauncherCrop = registerForActivityResult(CropResultContacts()) { uri ->
+
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
