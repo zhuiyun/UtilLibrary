@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="MyTempCircle">
+        <attr name="lineWidth" format="dimension" />
+        <attr name="pointWidth" format="dimension" />
+        <attr name="pointHigh" format="dimension" />
+        <attr name="scaleWidth" format="dimension" />
+    </declare-styleable>
+</resources>
