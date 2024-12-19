@@ -40,11 +40,6 @@ dependencies {
 ## Deployment Details
 Ensure that your project is configured to use the latest Android SDK and Gradle versions. Follow standard procedures for deploying Android libraries in your applications.
 
-## Code of Conduct
-We expect all contributors to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md). Please read it to understand the standards of behavior we expect from our community.
-
-## Contribution Guidelines
-We welcome contributions! Please follow our [Contribution Guidelines](CONTRIBUTING.md) to get started. Ensure that your code adheres to the existing coding standards and includes appropriate tests.
 
 ---
 
